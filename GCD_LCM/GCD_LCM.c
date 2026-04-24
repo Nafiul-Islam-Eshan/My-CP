@@ -16,3 +16,6 @@ int main(){
     int lcm = (n1 * n2) / gcd;
     printf("\nLCM = %d", lcm);
 }
+
+
+
