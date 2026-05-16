@@ -1,11 +1,15 @@
-#include<iostream>
-#include<cmath>
+#include <iostream>
+#include <cmath>
 using namespace std;
 int main()
 {
-    int a, b, c, d;
+    long long a, b, c, d;
     cin >> a >> b >> c >> d;
-    if (pow(a, b) > pow(c, d)) cout << "YES";
-    else cout << "NO";
+    double left = b * log(a);
+    double right = d * log(c);
+    if (left > right)
+        cout << "YES";
+    else
+        cout << "NO";
     return 0;
 }
