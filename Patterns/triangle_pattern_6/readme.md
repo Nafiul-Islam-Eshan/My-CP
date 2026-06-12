@@ -1,12 +1,12 @@
 # Triangle Pattern (Type 6)
 
 n = 3 <br>
-a <br>
-b c <br>
-d e f <br>
+1 <br>
+2 1 <br>
+3 2 1 <br>
 
 n = 4 <br>
-a <br>
-a b <br>
-a b c <br>
-a b c d <br>
+1 <br>
+2 1 <br>
+3 2 1 <br>
+4 3 2 1 <br>
