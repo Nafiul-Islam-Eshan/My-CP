@@ -7,6 +7,6 @@ d e f <br>
 
 n = 4 <br>
 a <br>
-a b <br>
-a b c <br>
-a b c d <br>
+b c <br>
+d e f <br>
+g h i j <br>
