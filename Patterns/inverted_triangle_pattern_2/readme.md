@@ -1,12 +1,14 @@
 # Inverted Triangle Pattern (Type 2)
 
-n = 3 <br>
-    1 <br>
-  2 2 <br>
-3 3 3 <br>
+```text
+n = 3 
+    1 
+  2 2 
+3 3 3 
 
-n = 4 <br>
-      1 <br>
-    2 2 <br>
-  3 3 3 <br>
-4 4 4 4 <br>
+n = 4 
+      1 
+    2 2 
+  3 3 3 
+4 4 4 4 
+```
