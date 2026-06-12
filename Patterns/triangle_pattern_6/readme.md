@@ -1,4 +1,4 @@
-# Triangle Pattern (Type 5)
+# Triangle Pattern (Type 6)
 
 n = 3 <br>
 a <br>
