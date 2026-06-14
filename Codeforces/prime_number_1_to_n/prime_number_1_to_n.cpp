@@ -1,14 +1,31 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
-int main(){
+int main()
+{
     int n;
     cin >> n;
-    for (int i = 1; i < n; i++)
+    bool nums[n + 1];
+    for (int i = 0; i < n + 1; i++)
     {
-        for (int j = 2; j <= i; j++)
+        nums[i] = true;
+    }
+    nums[0] = false;
+    nums[1] = false;
+    for (int i = 0; i < n + 1; i++)
+    {
+        if (nums[i] == true)
         {
-            if (n!=1 && j%i==0) cout << j << " " ;
+            for (int j = (i + i); j < n + 1; j = j + i)
+            {
+                nums[j] = false;
+            }
         }
-        
+    }
+    for (int i = 0; i < n + 1; i++)
+    {
+        if (nums[i] == true)
+        {
+            printf("%d ", i);
+        }
     }
 }
