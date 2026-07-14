@@ -5,6 +5,7 @@ int main()
     int r, c;
     cin >> r >> c;
     int a[r][c];
+    cout << "Enter matrix element :" << endl;
     for (int i = 0; i < r; i++)
     {
         for (int j = 0; j < c; j++)
