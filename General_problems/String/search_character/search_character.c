@@ -10,7 +10,7 @@ int main()
     printf("Enter String : ");
     getchar();
     // fgets(a, s, stdin);
-    scanf("%[^\n]c",a);
+    scanf("%[^\n]",a);
     printf("Character You Looking for : ");
     scanf(" %c", &target);
 
