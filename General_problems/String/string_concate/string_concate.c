@@ -18,7 +18,7 @@ void main()
     while (a[i] != '\0' && a[i] != '\n') {
         i++;
     }
-    j = 0;
+
     while(b[j] != '\0'){
         a[i] = b[j];
         i++;
