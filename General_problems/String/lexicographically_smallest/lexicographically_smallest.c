@@ -13,7 +13,7 @@ int main()
     fgets(a, 70, stdin);
     printf("2nd Word : ");
     fgets(b, 70, stdin);
-    if(strcasecmp((a), b) < 0) printf("Lexicographically Smallest Word : %s", a);
-    else if(strcasecmp((a), b) > 0) printf("Lexicographically Smallest Word : %s", b);
+    if(strcasecmp(a, b) < 0) printf("Lexicographically Smallest Word : %s", a);
+    else if(strcasecmp(a, b) > 0) printf("Lexicographically Smallest Word : %s", b);
     else printf("Both are same");
 }
