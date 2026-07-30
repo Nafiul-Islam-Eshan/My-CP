@@ -13,6 +13,7 @@
     1. Run a while loop until `temp !=0`
          1. store the last digit of temp in the `last = temp % 10` 
          1. if the last digit is not equals 7 and 4, then set `isLucky = false` and break the while loop using `break` statement.
+         1. Divide temp by 10 `temp /= 10` 
     1. 
 1. 
 1. 
