@@ -1,3 +1,12 @@
-n = int(input());
+n = int(input())
 scores = list(map(int, input().split(" ")));
-print(scores);
+max = scores[0]
+for i in range (n):
+    if(max < scores[i]):
+        max = scores[i]
+scores.remove(max)
+max = scores[0]
+for i in range (n-1):
+    if(max < scores[i]):
+        max = scores[i]
+print(max)

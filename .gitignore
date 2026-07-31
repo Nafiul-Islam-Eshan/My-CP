@@ -1,0 +1,9 @@
+# Executable files (বাইনারি ফাইল ইগনোর করার জন্য)
+*.exe
+
+# Object files
+*.o
+*.obj
+
+# VS Code specific files
+.vscode/
