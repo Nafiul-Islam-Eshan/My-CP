@@ -2,10 +2,6 @@
 #include<vector>
 using namespace std;
 
-void linear_search(){
-
-}
-
 int main(){
     vector<int> numbers;
     int a, n ;
