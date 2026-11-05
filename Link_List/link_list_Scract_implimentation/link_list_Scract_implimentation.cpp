@@ -86,6 +86,35 @@ class List {
             tail = temp; // Setting tail to point the lastest node.
         }
         
+        void insert(int val, int pos)
+        {
+            if(pos<0)
+            {
+                cout << "Invalid position\n";
+                return ;
+            }
+
+            if(pos == 0)
+            {
+                push_front(val);
+                return;
+            }
+
+            Node* temp = head;
+            for(int i=0; i<pos-1; i++) // This loop helps to store the node at position 'pos-1' inside temp. 
+            {
+                if(temp == NULL)
+                {
+                    cout << "Invalid Position\n";
+                    return;
+                }
+                temp = temp->next;
+            }
+            Node* newNode = new Node(val);
+            newNode->next = temp->next;
+            temp->next = newNode;
+        }
+        
         void displayLL(){
             Node* temp = head;
 
@@ -115,6 +144,8 @@ int main()
     ll.pop_front();
 
     ll.pop_back();
+
+    ll.insert(12,1);
 
     ll.displayLL();
     
