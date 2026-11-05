@@ -52,6 +52,20 @@ class List {
             
         }
 
+        void pop_front()
+        {
+            if(head==NULL) // If head points to null that means the link list is empty. Thus there nothing to delete.
+            {
+                cout << "Empty linked list\n";
+                return;
+            }
+
+            Node* temp = head; // storing the very beginning node (head) in temp node.
+            head = head->next; // Moving the head pointer to the next existing node cause we are deleting the first node and so second node is going to first node now.
+            temp->next = NULL; // Disconnecting the first node from the entire link list. Thus it will not link with the second node . Thus First node is totally separated from the linked list.
+            delete temp; // now the isolated first node is completely deleted from the memory location. 
+        }
+        
         void displayLL(){
             Node* temp = head;
 
@@ -77,6 +91,8 @@ int main()
     ll.push_back(4);
     ll.push_back(5);
     ll.push_back(6);
+
+    ll.pop_front();
 
     ll.displayLL();
     
