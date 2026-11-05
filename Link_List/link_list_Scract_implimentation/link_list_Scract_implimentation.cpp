@@ -65,6 +65,26 @@ class List {
             temp->next = NULL; // Disconnecting the first node from the entire link list. Thus it will not link with the second node . Thus First node is totally separated from the linked list.
             delete temp; // now the isolated first node is completely deleted from the memory location. 
         }
+
+        void pop_back()
+        {
+            if(head == NULL)
+            {
+                cout << "Empty linked list\n";
+                return;
+            }
+
+
+            Node* temp = head;
+            while (temp->next != tail) // This loop will help to find the 2nd last node(previous node of tail), so that tail pointer can be shifted to previouse node.
+            {
+                temp = temp->next;
+            }
+
+            temp->next=NULL; //Temp is now contain the second last node and so we are disconnected it with the tail node.
+            delete tail; 
+            tail = temp; // Setting tail to point the lastest node.
+        }
         
         void displayLL(){
             Node* temp = head;
@@ -93,6 +113,8 @@ int main()
     ll.push_back(6);
 
     ll.pop_front();
+
+    ll.pop_back();
 
     ll.displayLL();
     
