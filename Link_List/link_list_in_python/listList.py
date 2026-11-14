@@ -9,6 +9,16 @@ class LinkList:
         self.head = None
         self.tail = None
         
+    def push_front(self, data):
+        new_node=Node(data)
+        if self.head is None:
+            self.head=new_node
+            self.tail=new_node
+            return
+        else:
+            new_node.next=self.head
+            self.head=new_node
+        
     def push_back(self, data):
         new_node = Node(data)
         
@@ -33,11 +43,8 @@ class LinkList:
    
 ll = LinkList()
 ll.push_back(1)
-ll.push_back(2)
-ll.push_back(3)
-ll.push_back(4)
-ll.push_back(5)
-ll.push_back(6)
+ll.push_front(4)
+ll.push_front(14)
 ll.display()
 
 
